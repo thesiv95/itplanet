@@ -1,0 +1,60 @@
+.sidebar {
+    width: 240px;
+    float: right;
+}
+
+
+
+.sidebar__auth-title, .sidebar__poll-title {
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    font-size: 110%;
+    margin-top: -5px;
+}
+
+.sidebar__auth-title {
+    height: 10px;
+}
+
+.sidebar__auth-input {
+    width: 200px;
+    margin-left: -2px;
+    padding: 5px;
+}
+
+.sidebar__auth-para_login {
+    margin-top: 5px;
+    margin-right: 9px;
+}
+
+.sidebar__auth-para_login,.sidebar__auth-para_pass {
+    font-size: 18px;
+}
+
+.sidebar__auth-btn {
+    margin-top: 10px;
+}
+
+.sidebar__city,.sidebar__auth,.sidebar__gismeteo, .sidebar__poll {
+    border: 3px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.sidebar__auth-form {
+    margin-top: 5px;
+}
+
+.sidebar__poll-answers {
+    display: block;
+}
+
+.sidebar__poll-answer {
+    margin-top: -10px;
+}
+
+.sidebar__auth-btn,.sidebar__poll-btn {
+    margin-left: 25%;
+}
+

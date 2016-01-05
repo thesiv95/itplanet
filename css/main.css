@@ -1,0 +1,45 @@
+body {
+    background: url("../img/bg.png") no-repeat #e4f0eb;
+    background-size: cover;
+    font-family: 'PT Sans', 'Arial', sans-serif;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    width: inherit;
+    height: 125px;
+}
+
+.header__menu {
+    list-style: none;
+    margin-left: 0;
+    margin-top: -15px;
+    font-size: 20px;
+    padding: 0 30px;
+}
+
+.header__title {
+    font-family: 'Nautilus Pompilius', serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    font-style: normal;
+}
+
+.header__list {
+    display: inline;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+}
+
+.header__link:hover, .current {
+    text-decoration: underline;
+}

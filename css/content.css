@@ -1,0 +1,9 @@
+.content {
+    width: 760px;
+    float: left;
+}
+
+.content__item-title {
+    font-family: 'PT Serif', serif;
+}
+
