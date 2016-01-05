@@ -10,7 +10,13 @@
     <meta name="description" content="В данном интернет-портале будут отражены сведения о спортивных площадках, календаре мероприятий, официальных нормативах и многом другом. Каждый житель страны сможет получить полезные советы от профессионалов, узнать больше о подборе амуниции и правильном питании, записать ребёнка в секцию, а также открыть свой личный кабинет, где будет отображаться информация о его личных успехах.">
     <meta name="author" content="SIV">
     <title>Портал о здоровом образе жизни</title>
+    <!-- Библиотека normalize.css "заставляет" старые и новые браузеры отображать все элементы одинаково -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/sidebar.css">
 </head>
 <body>
 <div class="wrapper">
@@ -23,13 +29,13 @@
     <![endif]-->
     <!-- Заголовок меню -->
     <header class="header">
-        <h4 class="header__title">Портал о здоровом образе жизни</h4>
+        <h4 class="header__title">Здоровый образ жизни</h4>
         <ul class="header__menu">
             <li class="header__list current"><a href="#" class="header__link">Новости</a></li>
             <li class="header__list"><a href="#" class="header__link">Площадки</a></li>
             <li class="header__list"><a href="#" class="header__link">Секции</a></li>
             <li class="header__list"><a href="#" class="header__link">ГТО</a></li>
-            <li class="header__list"><a href="#" class="header__link">Хочу тренироваться!</a></li>
+            <li class="header__list"><a href="#" class="header__link">Хочу!</a></li>
             <li class="header__list"><a href="#" class="header__link">Календарь</a></li>
             <li class="header__list"><a href="#" class="header__link">Материалы</a></li>
             <li class="header__list"><a href="#" class="header__link">Экипировка</a></li>
@@ -37,6 +43,49 @@
             <li class="header__list"><a href="#" class="header__link">О проекте</a></li>
         </ul>
     </header>
+
+    <!-- правый сайдбар -->
+    <div class="sidebar">
+        <div class="sidebar__city">
+            <select name="" id="" class="sidebar__city-choose">
+                <option value="city1">Москва</option>
+                <option value="city2">Санкт-Петербург</option>
+                <option value="city3" selected="selected">Новосибирск</option>
+                <option value="city4">Екатеринбург</option>
+                <option value="city5">Нижний Новгород</option>
+                <option value="city6">Казань</option>
+                <option value="city7">Самара</option>
+                <option value="city8">Омск</option>
+                <option value="city9">Челябинск</option>
+                <option value="city10">Ростов-на-Дону</option>
+            </select>
+        </div>
+    <div class="sidebar__auth">
+        <form id="forma" class="sidebar__auth-form">
+            <h4 class="sidebar__auth-title">Личный кабинет</h4>
+            <label for="login" class="sidebar__auth-para_login">Логин</label>
+            <input type="text" id="login" class="sidebar__auth-input">
+            <label for="password" class="sidebar__auth-para_pass">Пароль</label>
+            <input type="password" id="password" class="sidebar__auth-input">
+            <button class="sidebar__auth-btn" type="submit">Вход в систему</button>
+        </form>
+    </div>
+    <div class="sidebar__gismeteo">
+        <p>GISMETEO.</p>
+    </div>
+    <div class="sidebar__poll">
+        <h4 class="sidebar__poll-title">Poll title</h4>
+        <div class="sidebar__poll-answers">
+            <form id="poll-form">
+                <p class="sidebar__poll-answer"><input type="radio"> Answer 1</p>
+                <p class="sidebar__poll-answer"><input type="radio"> Answer 2</p>
+                <p class="sidebar__poll-answer"><input type="radio"> Answer 3</p>
+                <button class="sidebar__poll-btn" type="submit">Проголосовать</button>
+            </form>
+        </div>
+    </div>
+</div>
+    <!-- Изменяемый контент: в этот блок будет выводиться вся основная информация -->
     <div class="content">
         <div class="content__item">
             <h4 class="content__item-title">Page header</h4>
@@ -125,54 +174,19 @@
             <p class="content__item-activity">Просмотров: 0 | Комментариев: 0</p>
         </div>
     </div>
-    <!-- правый сайдбар -->
-    <div class="right">
-        <div class="right__city">
-            <select name="" id="" class="right__city-choose">
-                <option value="city1">Москва</option>
-                <option value="city2">Санкт-Петербург</option>
-                <option value="city3" selected="selected">Новосибирск</option>
-                <option value="city4">Екатеринбург</option>
-                <option value="city5">Нижний Новгород</option>
-                <option value="city6">Казань</option>
-                <option value="city7">Самара</option>
-                <option value="city8">Омск</option>
-                <option value="city9">Челябинск</option>
-                <option value="city10">Ростов-на-Дону</option>
-            </select>
-        </div>
-    </div>
-    <div class="right__auth">
-        <form id="forma">
-            <h4 class="right__auth-title">Личный кабинет</h4>
-            <label for="login" class="right__auth-para">Логин</label>
-            <input type="text" id="login" class="right__auth-input">
-            <label for="password" class="right__auth-para">Пароль</label>
-            <input type="password" id="password" class="right__auth-input">
-            <button class="right__auth-btn" type="submit">Вход в систему</button>
-        </form>
-    </div>
-    <div class="right__gismeteo"></div>
-    <div class="right__poll">
-        <h4 class="right__poll-title">Poll title</h4>
-        <div class="right__poll-answers">
-            <form id="poll-form">
-                <input type="radio"> Answer 1
-                <input type="radio"> Answer 2
-                <input type="radio"> Answer 3
-                <button class="right__poll-btn" type="submit">Проголосовать</button>
-            </form>
-        </div>
-    </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>
-    // Проверяем, подключился ли jquery с cdn. Если нет - загружаем из папки
-    // Лучше, когда библиотека загружается с cdn - страница загружается быстрее
-    // Но если скорость соединения хорошая - разницы нет
-    window.jQuery || document.write('<scr' + 'ipt src=\"js/jquery.min.js\"></scr ' + 'ipt>')
-    // Используется старая версия (1.11.3), т.к. поддерживается IE8
-</script>
-<script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        // Проверяем, подключился ли jquery с cdn. Если нет - загружаем из папки
+        // Лучше, когда библиотека загружается с cdn - страница загружается быстрее
+        // Но если скорость соединения хорошая - разницы нет
+        window.jQuery || document.write('<scr' + 'ipt src=\"js/jquery.min.js\"></scr' + 'ipt>');
+        // Используется старая версия (1.11.3), т.к. поддерживается IE8
+
+        // Библиотека html5shiv позволяет старым браузерам отображать новые теги HTML5.
+    </script>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/html5shiv-printshiv.min.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
