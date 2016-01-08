@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <!-- отключить режим совместимости internet explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- seo optimization: запретим индексацию сайта поисковыми роботами -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="keywords" content="зож, здоровый, образ, жизни, тренировки, спорт, портал, культура, секции, площадки, новости, молодёжь, потенциал">
+    <meta name="description" content="В данном интернет-портале будут отражены сведения о спортивных площадках, календаре мероприятий, официальных нормативах и многом другом. Каждый житель страны сможет получить полезные советы от профессионалов, узнать больше о подборе амуниции и правильном питании, записать ребёнка в секцию, а также открыть свой личный кабинет, где будет отображаться информация о его личных успехах.">
+    <meta name="author" content="SIV">
+    <title>Портал о здоровом образе жизни</title>
+    <link rel="stylesheet" type="text/css" href="https://bst1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css">
+    <!-- Библиотека normalize.css "заставляет" старые и новые браузеры отображать все элементы одинаково -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+</head>
+<body>
+<div class="wrapper">
+    <!-- Если браузер internet explorer 8 или ниже, сайт будет работать более-менее, но появится предупреждение -->
+    <!--[if gte IE 8]>
+    <div class="ie-warning">
+        <p class="ie-warning__para">Вы используете <strong>устаревший браузер</strong>.</p>
+        <p  class="ie-warning__para">Пожалуйста, скачайте более новый браузер по <a href="http://browsehappy.com/" target="_blank">этой ссылке</a>, в противном случае корректная работа сайта не гарантируется.</p>
+    </div>
+    <![endif]-->
+    <!-- Заголовок меню -->
+    <header class="header">
+        <h4 class="header__title">Здоровый образ жизни</h4>
+        <ul class="header__menu">
+            <li class="header__list"><a href="news.html" class="header__link">Новости</a></li>
+            <li class="header__list"><a href="areas.html" class="header__link">Площадки</a></li>
+            <li class="header__list"><a href="secs.html" class="header__link">Секции</a></li>
+            <li class="header__list"><a href="gto.html" class="header__link">ГТО</a></li>
+            <li class="header__list"><a href="iwannatrain.html" class="header__link">Хочу!</a></li>
+            <li class="header__list current"><a href="calendar.html" class="header__link">Календарь</a></li>
+            <li class="header__list"><a href="info.html" class="header__link">Материалы</a></li>
+            <li class="header__list"><a href="equipment.html" class="header__link">Экипировка</a></li>
+            <li class="header__list"><a href="standards.html" class="header__link">Нормативы</a></li>
+            <li class="header__list"><a href="about.html" class="header__link">О проекте</a></li>
+        </ul>
+    </header>
+
+    <!-- правый сайдбар -->
+    <div class="sidebar">
+        <div class="sidebar__city">
+            <select name="city" id="city" class="sidebar__city-choose">
+                <option value="city1">Москва</option>
+                <option value="city2">Санкт-Петербург</option>
+                <option value="city3" selected="selected">Новосибирск</option>
+                <option value="city4">Екатеринбург</option>
+                <option value="city5">Нижний Новгород</option>
+                <option value="city6">Казань</option>
+                <option value="city7">Самара</option>
+                <option value="city8">Омск</option>
+                <option value="city9">Челябинск</option>
+                <option value="city10">Ростов-на-Дону</option>
+            </select>
+        </div>
+        <div class="sidebar__auth">
+            <form id="forma" class="sidebar__auth-form">
+                <h4 class="sidebar__auth-title">Личный кабинет</h4>
+                <span class="icon-user"></span>
+                <label for="login" class="sidebar__auth-para_login">Логин</label>
+                <input type="text" id="login" class="sidebar__auth-input">
+                <span class="icon-key"></span>
+                <label for="password" class="sidebar__auth-para_pass">Пароль</label>
+                <input type="password" id="password" class="sidebar__auth-input">
+                <button class="sidebar__auth-btn" type="submit">Вход в систему</button>
+            </form>
+        </div>
+        <div class="sidebar__gismeteo">
+            <!-- Gismeteo informer START -->
+            <div id="gsInformerID-wbYpG03C36T6ts" class="gsInformer" style="width:218px !important; height:70px">
+                <!-- 262px original -->
+                <div class="gsIContent">
+                    <div id="cityLink">
+                        <a href="https://www.gismeteo.ru/city/daily/4690/" target="_blank">Погода </a>
+                    </div>
+                    <div class="gsLinks">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="leftCol">
+                                        <a href="https://www.gismeteo.ru/" target="_blank">
+                                            <img alt="Gismeteo" title="Gismeteo" src="https://bst1.gismeteo.ru/assets/flat-ui/img/logo-mini2.png" align="middle" border="0" />
+                                            <span>Gismeteo</span>
+                                        </a>
+                                    </div>
+                                    <div class="rightCol">
+                                        <a href="https://www.gismeteo.ru/" target="_blank">Прогноз на 2 недели</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <script async src="https://www.gismeteo.ru/api/informer/getinformer/?hash=wbYpG03C36T6ts" type="text/javascript"></script>
+            <!-- Gismeteo informer END -->
+        </div>
+        <div class="sidebar__poll">
+            <h4 class="sidebar__poll-title">Poll title</h4>
+            <div class="sidebar__poll-answers">
+                <form id="poll-form">
+                    <p class="sidebar__poll-answer"><input type="radio"> Answer 1</p>
+                    <p class="sidebar__poll-answer"><input type="radio"> Answer 2</p>
+                    <p class="sidebar__poll-answer"><input type="radio"> Answer 3</p>
+                    <button class="sidebar__poll-btn" type="submit">Проголосовать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Изменяемый контент: в этот блок будет выводиться вся основная информация -->
+    <div class="content">
+        <div class="content__item">
+            <h4 class="content__item-title">Сборная России сыграет с Финляндией в финале МЧМ-2016</h4>
+            <p class="content__item-date">
+                <span class="icon-clock"></span>
+                05/01/2016, 08:56
+            </p>
+            <div class="content__item-text">
+                Sport.ru / Хоккей. Хоккеисты сборной России сыграют в финале молодёжного чемпионата мира по хоккею в Хельсинки против команды Финляндии.
+                Оба финалиста одержали в своих полуфинальных поединках победы с одинаковым счётом (2:1), и оба, что характерно, вынуждены были отыгрываться. Причём сюжет обоих матчей был одинаков. И россияне, и финны уступали после первого периода, соответственно, американцам и шведам, однако во второй 20-минутке переломили ход встречи. Ярко выступил форвард сборной России Егор Коршков, который забросил победную шайбу после индивидуального прохода, который, видимо, от него мало кто из соперников ждал. В третьем периоде и россияне, и финны удержали победный счёт.
+            </div>
+            <p class="content__item-activity">
+                <span class="icon-eye"></span>
+                Просмотров: 155
+                |
+                <span class="icon-bubble2"></span>
+                Комментариев: 20
+            </p>
+        </div>
+        <div class="content__item">
+            <h4 class="content__item-title">Сборная России сыграет с Финляндией в финале МЧМ-2016</h4>
+            <p class="content__item-date">
+                <span class="icon-clock"></span>
+                05/01/2016, 08:56
+            </p>
+            <div class="content__item-text">
+                Sport.ru / Хоккей. Хоккеисты сборной России сыграют в финале молодёжного чемпионата мира по хоккею в Хельсинки против команды Финляндии.
+                Оба финалиста одержали в своих полуфинальных поединках победы с одинаковым счётом (2:1), и оба, что характерно, вынуждены были отыгрываться. Причём сюжет обоих матчей был одинаков. И россияне, и финны уступали после первого периода, соответственно, американцам и шведам, однако во второй 20-минутке переломили ход встречи. Ярко выступил форвард сборной России Егор Коршков, который забросил победную шайбу после индивидуального прохода, который, видимо, от него мало кто из соперников ждал. В третьем периоде и россияне, и финны удержали победный счёт.
+            </div>
+            <p class="content__item-activity">
+                <span class="icon-eye"></span>
+                Просмотров: 155
+                |
+                <span class="icon-bubble2"></span>
+                Комментариев: 20
+            </p>
+        </div>
+        <div class="content__item">
+            <h4 class="content__item-title">Сборная России сыграет с Финляндией в финале МЧМ-2016</h4>
+            <p class="content__item-date">
+                <span class="icon-clock"></span>
+                05/01/2016, 08:56
+            </p>
+            <div class="content__item-text">
+                Sport.ru / Хоккей. Хоккеисты сборной России сыграют в финале молодёжного чемпионата мира по хоккею в Хельсинки против команды Финляндии.
+                Оба финалиста одержали в своих полуфинальных поединках победы с одинаковым счётом (2:1), и оба, что характерно, вынуждены были отыгрываться. Причём сюжет обоих матчей был одинаков. И россияне, и финны уступали после первого периода, соответственно, американцам и шведам, однако во второй 20-минутке переломили ход встречи. Ярко выступил форвард сборной России Егор Коршков, который забросил победную шайбу после индивидуального прохода, который, видимо, от него мало кто из соперников ждал. В третьем периоде и россияне, и финны удержали победный счёт.
+            </div>
+            <p class="content__item-activity">
+                <span class="icon-eye"></span>
+                Просмотров: 155
+                |
+                <span class="icon-bubble2"></span>
+                Комментариев: 20
+            </p>
+        </div>
+    </div>
+    <!-- Конец изменяемого контента -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        // Проверяем, подключился ли jquery с cdn. Если нет - загружаем из папки
+        // Лучше, когда библиотека загружается с cdn - страница загружается быстрее
+        // Но если скорость соединения хорошая - разницы нет
+        window.jQuery || document.write('<scr' + 'ipt src=\"js/jquery.min.js\"></scr' + 'ipt>');
+        // Используется старая версия (1.11.3), т.к. поддерживается IE8
+
+        // Библиотека html5shiv позволяет старым браузерам отображать новые теги HTML5.
+    </script>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/html5shiv-printshiv.min.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
