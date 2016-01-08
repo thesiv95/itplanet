@@ -26,6 +26,9 @@
 
 @font-face {
     font-family: 'Nautilus Pompilius';
+    src: url('../fonts/nautiluspompilius.eot');
+    src:
+    url('../fonts/nautiluspompilius.eot?#iefix') format('embedded-opentype');
     src: local('Nautilus Pompilius'),
     local('NautilusPompilius'),
     url('../fonts/nautiluspompilius.woff') format('woff'),
