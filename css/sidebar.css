@@ -4,6 +4,29 @@
 }
 
 
+.sidebar__city-choose {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    /* убираем стандартную стрелочку */
+    /*for WebKit*/
+    -webkit-appearance: none;
+    /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none !important;
+    background-image: url('../img/select-arrow.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+/* то же самое для старых ИЕ */
+.sidebar__city-choose::-ms-expand {
+    display: none;
+}
 
 .sidebar__auth-title, .sidebar__poll-title {
     font-family: 'PT Serif', serif;
@@ -56,5 +79,9 @@
 
 .sidebar__auth-btn,.sidebar__poll-btn {
     margin-left: 25%;
+}
+
+.gsInformer {
+    width: 215px !important;
 }
 

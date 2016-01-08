@@ -10,6 +10,7 @@
     <meta name="description" content="В данном интернет-портале будут отражены сведения о спортивных площадках, календаре мероприятий, официальных нормативах и многом другом. Каждый житель страны сможет получить полезные советы от профессионалов, узнать больше о подборе амуниции и правильном питании, записать ребёнка в секцию, а также открыть свой личный кабинет, где будет отображаться информация о его личных успехах.">
     <meta name="author" content="SIV">
     <title>Портал о здоровом образе жизни</title>
+    <link rel="stylesheet" type="text/css" href="https://bst1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css">
     <!-- Библиотека normalize.css "заставляет" старые и новые браузеры отображать все элементы одинаково -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/select2.css">
@@ -73,7 +74,34 @@
         </form>
     </div>
     <div class="sidebar__gismeteo">
-        <p>GISMETEO.</p>
+        <!-- Gismeteo informer START -->
+        <div id="gsInformerID-wbYpG03C36T6ts" class="gsInformer" style="width:218px !important; height:70px">
+            <!-- 262px original -->
+            <div class="gsIContent">
+                <div id="cityLink">
+                    <a href="https://www.gismeteo.ru/city/daily/4690/" target="_blank">Погода </a>
+                </div>
+                <div class="gsLinks">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="leftCol">
+                                    <a href="https://www.gismeteo.ru/" target="_blank">
+                                        <img alt="Gismeteo" title="Gismeteo" src="https://bst1.gismeteo.ru/assets/flat-ui/img/logo-mini2.png" align="middle" border="0" />
+                                        <span>Gismeteo</span>
+                                    </a>
+                                </div>
+                                <div class="rightCol">
+                                    <a href="https://www.gismeteo.ru/" target="_blank">Прогноз на 2 недели</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script async src="https://www.gismeteo.ru/api/informer/getinformer/?hash=wbYpG03C36T6ts" type="text/javascript"></script>
+        <!-- Gismeteo informer END -->
     </div>
     <div class="sidebar__poll">
         <h4 class="sidebar__poll-title">Poll title</h4>
