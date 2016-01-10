@@ -23,7 +23,7 @@ body {
 }
 
 .header__title {
-    font-family: 'Nautilus Pompilius', '', serif;
+    font-family: 'Nautilus Pompilius', serif;
     font-weight: bold;
     font-size: 36px;
     text-align: center;

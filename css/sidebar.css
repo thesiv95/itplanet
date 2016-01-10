@@ -75,6 +75,11 @@
 
 .sidebar__poll-answer {
     margin-top: -10px;
+    margin-right: 1px;
+}
+
+.sidebar__poll-input {
+    margin-right: 8px;
 }
 
 .sidebar__auth-btn,.sidebar__poll-btn {

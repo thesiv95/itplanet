@@ -1,4 +1,4 @@
-/* Свои шрифты */
+﻿/* Свои шрифты */
 
 @font-face {
     font-family: 'PT Sans';
@@ -29,9 +29,7 @@
     src: url('../fonts/nautiluspompilius.eot');
     src:
     url('../fonts/nautiluspompilius.eot?#iefix') format('embedded-opentype');
-    src: local('Nautilus Pompilius'),
-    local('NautilusPompilius'),
-    url('../fonts/nautiluspompilius.woff') format('woff'),
+    src: url('../fonts/nautiluspompilius.woff') format('woff'),
     url('../fonts/nautiluspompilius.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
