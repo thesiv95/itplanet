@@ -7,3 +7,24 @@
     font-family: 'PT Serif', serif;
 }
 
+.content__item-controls {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content__item-choose {
+    text-decoration: none;
+    color: #000;
+    padding: 0 2px;
+}
+
+.content__item-choose:hover {
+    border: 1px solid #000;
+    border-radius: 6px;
+}
+
+.content__item-choose.active {
+    border: 1px solid #000;
+    border-radius: 6px;
+}
+
