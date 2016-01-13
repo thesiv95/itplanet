@@ -118,19 +118,19 @@
     <!-- Изменяемый контент: в этот блок будет выводиться вся основная информация -->
     <div class="content">
         <div class="content__item">
-            <h4 class="content__item-title">Нормативы ГТО - <span id="gtonum">1</span> ступень</h4>
+            <h4 class="content__item-title">Нормативы ГТО - <span id="gtonum">1</span> ступень - для
+            <span id="gtofor">школьников 6-8 лет</span></h4>
             <div class="content__item-text">
                 <div class="content__item-controls">
-                    <a href="#1" data-index="1" class="content__item-choose active">1 ступень</a>
-                    <a href="#2" data-index="2" class="content__item-choose">2 ступень</a>
-                    <a href="#3" data-index="3" class="content__item-choose">3 ступень</a>
-                    <a href="#4" data-index="4" class="content__item-choose">4 ступень</a>
-                    <a href="#5" data-index="5" class="content__item-choose">5 ступень</a>
-                    <a href="#6" data-index="6" class="content__item-choose">6 ступень</a>
-                    <a href="#7" data-index="7" class="content__item-choose">7 ступень</a>
-                    <a href="#8" data-index="8" class="content__item-choose">8 ступень</a>
-                    <a href="#9" data-index="9" class="content__item-choose">9 ступень</a>
-                    <a href="#10" data-index="10" class="content__item-choose">10 ступень</a>
+                    <div class="content__item-chooseblock">
+                        <!-- children -->
+                        <a href="#1" data-index="1" data-for="школьников 6-8 лет" class="content__item-choose active">1 ступень</a>
+                        <a href="#2" data-index="2" data-for="школьников 9-10 лет" class="content__item-choose">2 ступень</a>
+                        <a href="#3" data-index="3" data-for="школьников 11-12 лет" class="content__item-choose">3 ступень</a>
+                        <a href="#4" data-index="4" data-for="школьников 13-15 лет" class="content__item-choose">4 ступень</a>
+                        <a href="#5" data-index="5" data-for="школьников 16-17 лет" class="content__item-choose">5 ступень</a>
+                    </div>
+
                 </div>
                 <!-- 1 -->
                 <table border="2" id="table-1">
@@ -296,7 +296,7 @@
         </div>
         <!-- /1 -->
         <!-- 2 -->
-        <table border="2">
+        <table border="2" id="table-2">
             <tbody>
             <tr>
                 <td style="text-align: center;" rowspan="3"><strong>№ п/п</strong></td>
@@ -462,7 +462,7 @@
         </table>
         <!-- /2 -->
         <!-- 3 -->
-        <table border="2">
+        <table border="2" id="table-3">
             <tbody>
             <tr>
                 <td style="text-align: center;" rowspan="3"><strong>№ п/п</strong></td>
@@ -656,8 +656,457 @@
         </table>
         <!-- /3 -->
         <!-- 4 -->
-
+        <table border="2" id="table-4">
+            <tbody>
+            <tr>
+                <td style="text-align: center;" rowspan="3"><strong>№ п/п</strong></td>
+                <td style="text-align: center;" rowspan="3"><strong>Виды испытаний (тесты)</strong></td>
+                <td style="text-align: center;" colspan="6"><strong>Возраст 13-15 лет</strong></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="3"><strong><strong>Мальчики</strong></strong></td>
+                <td style="text-align: center;" colspan="3"><strong><strong>Девочки</strong></strong></td>
+            </tr>
+            <tr>
+                <td style="background-color: #cd7f32; padding-bottom: 12px;" title="Бронза"></td>
+                <td style="background-color: #c0c0c0;" title="Серебро"></td>
+                <td style="background-color: #ffd700;" title="Золото"></td>
+                <td style="background-color: #cd7f32;" title="Бронза"></td>
+                <td style="background-color: #c0c0c0;" title="Серебро"></td>
+                <td style="background-color: #ffd700;" title="Золото"></td>
+            </tr>
+            <tr>
+                <td colspan="8"><strong>Обязательные испытания (тесты)</strong></td>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Бег на 60 м (сек.)</td>
+                <td style="text-align: center;">10,0</td>
+                <td style="text-align: center;">9,7</td>
+                <td style="text-align: center;">8,7</td>
+                <td style="text-align: center;">10,9</td>
+                <td style="text-align: center;">10,6</td>
+                <td style="text-align: center;">9,6</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2.</td>
+                <td>Бег на 2 км (мин., сек.)</td>
+                <td style="text-align: center;">9.55</td>
+                <td style="text-align: center;">9.30</td>
+                <td style="text-align: center;">9.00</td>
+                <td style="text-align: center;">12.10</td>
+                <td style="text-align: center;">11.40</td>
+                <td style="text-align: center;">11.00</td>
+            </tr>
+            <tr>
+                <td>или на 3 км (мин., сек.)</td>
+                <td style="text-align: center;" colspan="3">Без учета времени</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+            </tr>
+            <tr>
+                <td rowspan="3">3.</td>
+                <td>Подтягивание из виса на высокой перекладине (кол-во раз)</td>
+                <td style="text-align: center;">4</td>
+                <td style="text-align: center;">6</td>
+                <td style="text-align: center;">10</td>
+                <td style="text-align: center;"></td>
+                <td style="text-align: center;"></td>
+                <td style="text-align: center;"></td>
+            </tr>
+            <tr>
+                <td>или подтягивание из виса лежа на низкой перекладине (кол-во раз)</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">9</td>
+                <td style="text-align: center;">11</td>
+                <td style="text-align: center;">18</td>
+            </tr>
+            <tr>
+                <td>или сгибание и разгибание рук упоре лежа на полу (кол-во раз)</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">7</td>
+                <td style="text-align: center;">9</td>
+                <td style="text-align: center;">15</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Наклон вперед из положения стоя с прямыми ногами на полу (достать пол)</td>
+                <td style="text-align: center;" colspan="2">Пальцами</td>
+                <td style="text-align: center;">Ладонями</td>
+                <td style="text-align: center;" colspan="2">Пальцами</td>
+                <td style="text-align: center;">Ладонями</td>
+            </tr>
+            <tr>
+                <td colspan="8"><strong>Испытания (тесты) по выбору</strong></td>
+            </tr>
+            <tr>
+                <td rowspan="2">5.</td>
+                <td>Прыжок в длину с разбега (см)</td>
+                <td style="text-align: center;">330</td>
+                <td style="text-align: center;">350</td>
+                <td style="text-align: center;">390</td>
+                <td style="text-align: center;">280</td>
+                <td style="text-align: center;">290</td>
+                <td style="text-align: center;">330</td>
+            </tr>
+            <tr>
+                <td>или прыжок в длину с места толчком двумя ногами (см)</td>
+                <td style="text-align: center;">175</td>
+                <td style="text-align: center;">185</td>
+                <td style="text-align: center;">200</td>
+                <td style="text-align: center;">150</td>
+                <td style="text-align: center;">155</td>
+                <td style="text-align: center;">175</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Поднимание туловища из положения лежа на спине (кол-во раз 1 мин.)</td>
+                <td style="text-align: center;">30</td>
+                <td style="text-align: center;">36</td>
+                <td style="text-align: center;">47</td>
+                <td style="text-align: center;">25</td>
+                <td style="text-align: center;">30</td>
+                <td style="text-align: center;">40</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>Метание мяча весом 150 г (м)</td>
+                <td style="text-align: center;">30</td>
+                <td style="text-align: center;">35</td>
+                <td style="text-align: center;">40</td>
+                <td style="text-align: center;">18</td>
+                <td style="text-align: center;">21</td>
+                <td style="text-align: center;">26</td>
+            </tr>
+            <tr>
+                <td rowspan="3">8.</td>
+                <td>Бег на лыжах на 3 км (мин., сек.)</td>
+                <td style="text-align: center;">18.45</td>
+                <td style="text-align: center;">17.45</td>
+                <td style="text-align: center;">16.30</td>
+                <td style="text-align: center;">22.30</td>
+                <td style="text-align: center;">21.30</td>
+                <td style="text-align: center;">19.30</td>
+            </tr>
+            <tr>
+                <td>или на 5 км (мин., сек.)</td>
+                <td style="text-align: center;">28.00</td>
+                <td style="text-align: center;">27.15</td>
+                <td style="text-align: center;">26.00</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+            </tr>
+            <tr>
+                <td>или кросс на 3 км по пересеченной местности*</td>
+                <td style="text-align: center;" colspan="6">Без учета времени</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>Плавание на 50 м (мин., сек.)</td>
+                <td style="text-align: center;" colspan="2">Без учета</td>
+                <td style="text-align: center;">0.43</td>
+                <td style="text-align: center;" colspan="2">Без учета</td>
+                <td style="text-align: center;">1.05</td>
+            </tr>
+            <tr>
+                <td rowspan="2">10.</td>
+                <td>Стрельба из пневматической винтовки из положения сидя или стоя с опорой локтей о стол или стойку, дистанция — 10 м (очки)&nbsp;<a title="Стрельба из пневматической винтовки" href="http://www.gto-normy.ru/strelba-iz-pnevmaticheskoy-vintovki/">···</a></td>
+                <td style="text-align: center;">15</td>
+                <td style="text-align: center;">20</td>
+                <td style="text-align: center;">25</td>
+                <td style="text-align: center;">15</td>
+                <td style="text-align: center;">20</td>
+                <td style="text-align: center;">25</td>
+            </tr>
+            <tr>
+                <td>или из электронного оружия из положения сидя или стоя с опорой локтей о стол или стойку, дистанция — 10 м (очки)</td>
+                <td style="text-align: center;">18</td>
+                <td style="text-align: center;">25</td>
+                <td style="text-align: center;">30</td>
+                <td style="text-align: center;">18</td>
+                <td style="text-align: center;">25</td>
+                <td style="text-align: center;">30</td>
+            </tr>
+            <tr>
+                <td>11.</td>
+                <td>Туристический поход с проверкой туристических навыков</td>
+                <td style="text-align: center;" colspan="6">Туристический поход с проверкой туристических навыков на дистанцию 10 км</td>
+            </tr>
+            <tr>
+                <td colspan="2">Кол-во видов испытаний видов (тестов) в возрастной группе</td>
+                <td style="text-align: center;">11</td>
+                <td style="text-align: center;">11</td>
+                <td style="text-align: center;">11</td>
+                <td style="text-align: center;">11</td>
+                <td style="text-align: center;">11</td>
+                <td style="text-align: center;">11</td>
+            </tr>
+            <tr>
+                <td colspan="2">Кол-во испытаний (тестов), которые необходимо выполнить для получения знака отличия Комплекса**</td>
+                <td style="text-align: center;">6</td>
+                <td style="text-align: center;">7</td>
+                <td style="text-align: center;">8</td>
+                <td style="text-align: center;">6</td>
+                <td style="text-align: center;">7</td>
+                <td style="text-align: center;">8</td>
+            </tr>
+            <tr>
+                <td colspan="8">* Для бесснежных районов страны</td>
+            </tr>
+            <tr>
+                <td colspan="8">** При выполнении нормативов для получения знаков отличия Комплекса обязательны испытания (тесты) на силу, быстроту, гибкость и выносливость.</td>
+            </tr>
+            </tbody>
+        </table>
         <!-- /4 -->
+        <!-- 5 -->
+        <table border="2" id="table-5">
+            <tbody>
+            <tr>
+                <td style="text-align: center;" rowspan="3"><strong>№ п/п</strong></td>
+                <td style="text-align: center;" rowspan="3"><strong>Виды испытаний (тесты)</strong></td>
+                <td style="text-align: center;" colspan="6"><strong>Возраст 16-17 лет</strong></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="3"><strong><strong>Юноши</strong></strong></td>
+                <td style="text-align: center;" colspan="3"><strong><strong>Девушки</strong></strong></td>
+            </tr>
+            <tr>
+                <td style="background-color: #cd7f32; padding-bottom: 12px;" title="Бронза"></td>
+                <td style="background-color: #c0c0c0;" title="Серебро"></td>
+                <td style="background-color: #ffd700;" title="Золото"></td>
+                <td style="background-color: #cd7f32;" title="Бронза"></td>
+                <td style="background-color: #c0c0c0;" title="Серебро"></td>
+                <td style="background-color: #ffd700;" title="Золото"></td>
+            </tr>
+            <tr>
+                <td colspan="8"><strong>Обязательные испытания (тесты)</strong></td>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Бег на 100 м (сек.)</td>
+                <td style="text-align: center;">14,6</td>
+                <td style="text-align: center;">14,3</td>
+                <td style="text-align: center;">13,8</td>
+                <td style="text-align: center;">18,0</td>
+                <td style="text-align: center;">17,6</td>
+                <td style="text-align: center;">16,3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2.</td>
+                <td>Бег на 2 км (мин., сек.)</td>
+                <td style="text-align: center;">9.20</td>
+                <td style="text-align: center;">8.50</td>
+                <td style="text-align: center;">7.50</td>
+                <td style="text-align: center;">11.50</td>
+                <td style="text-align: center;">11.20</td>
+                <td style="text-align: center;">9.50</td>
+            </tr>
+            <tr>
+                <td>или на 3 км (мин., сек.)</td>
+                <td style="text-align: center;">15.10</td>
+                <td style="text-align: center;">14.40</td>
+                <td style="text-align: center;">13.10</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+            </tr>
+            <tr>
+                <td rowspan="4">3.</td>
+                <td>Подтягивание из виса на высокой перекладине (кол-во раз)</a></td>
+                <td style="text-align: center;">8</td>
+                <td style="text-align: center;">10</td>
+                <td style="text-align: center;">13</td>
+                <td style="text-align: center;"></td>
+                <td style="text-align: center;"></td>
+                <td style="text-align: center;"></td>
+            </tr>
+            <tr>
+                <td>или рывок гири (кол-во раз)</td>
+                <td style="text-align: center;">15</td>
+                <td style="text-align: center;">25</td>
+                <td style="text-align: center;">35</td>
+                <td style="text-align: center;"></td>
+                <td style="text-align: center;"></td>
+                <td style="text-align: center;"></td>
+            </tr>
+            <tr>
+                <td>или подтягивание из виса лежа на низкой перекладине (кол-во раз)</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">11</td>
+                <td style="text-align: center;">13</td>
+                <td style="text-align: center;">19</td>
+            </tr>
+            <tr>
+                <td>или сгибание и разгибание рук упоре лежа на полу (кол-во раз)</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">9</td>
+                <td style="text-align: center;">10</td>
+                <td style="text-align: center;">16</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Наклон вперед из положения стоя с прямыми ногами на гимнастической скамье (см)</td>
+                <td style="text-align: center;">+6</td>
+                <td style="text-align: center;">+8</td>
+                <td style="text-align: center;">+13</td>
+                <td style="text-align: center;">+7</td>
+                <td style="text-align: center;">+9</td>
+                <td style="text-align: center;">+16</td>
+            </tr>
+            <tr>
+                <td colspan="8"><strong>Испытания (тесты) по выбору</strong></td>
+            </tr>
+            <tr>
+                <td rowspan="2">5.</td>
+                <td>Прыжок в длину с разбега (см)</td>
+                <td style="text-align: center;">360</td>
+                <td style="text-align: center;">380</td>
+                <td style="text-align: center;">440</td>
+                <td style="text-align: center;">310</td>
+                <td style="text-align: center;">320</td>
+                <td style="text-align: center;">360</td>
+            </tr>
+            <tr>
+                <td>или прыжок в длину с места толчком двумя ногами (см)</td>
+                <td style="text-align: center;">200</td>
+                <td style="text-align: center;">210</td>
+                <td style="text-align: center;">230</td>
+                <td style="text-align: center;">160</td>
+                <td style="text-align: center;">170</td>
+                <td style="text-align: center;">185</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Поднимание туловища из положения лежа на спине (кол-во раз 1 мин.)</td>
+                <td style="text-align: center;">30</td>
+                <td style="text-align: center;">40</td>
+                <td style="text-align: center;">50</td>
+                <td style="text-align: center;">20</td>
+                <td style="text-align: center;">30</td>
+                <td style="text-align: center;">40</td>
+            </tr>
+            <tr>
+                <td rowspan="2">7.</td>
+                <td>Метание спортивного снаряда весом 700 г (м)</td>
+                <td style="text-align: center;">27</td>
+                <td style="text-align: center;">32</td>
+                <td style="text-align: center;">38</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+            </tr>
+            <tr>
+                <td>или весом 500 г (м)</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">13</td>
+                <td style="text-align: center;">17</td>
+                <td style="text-align: center;">21</td>
+            </tr>
+            <tr>
+                <td rowspan="4">8.</td>
+                <td>Бег на лыжах на 3 км (мин., сек.)</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">19.15</td>
+                <td style="text-align: center;">18.45</td>
+                <td style="text-align: center;">17.30</td>
+            </tr>
+            <tr>
+                <td>или на 5 км (мин., сек.)</td>
+                <td style="text-align: center;">25.40</td>
+                <td style="text-align: center;">25.00</td>
+                <td style="text-align: center;">23.40</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+            </tr>
+            <tr>
+                <td>или кросс на 3 км по пересеченной местности*</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;" colspan="3">Без учета времени</td>
+            </tr>
+            <tr>
+                <td>или кросс на 5 км по пересеченной местности*</td>
+                <td style="text-align: center;" colspan="3">Без учета времени</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">-</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>Плавание на 50 м (мин., сек.)</td>
+                <td style="text-align: center;" colspan="2">Без учета</td>
+                <td style="text-align: center;">0.41</td>
+                <td style="text-align: center;" colspan="2">Без учета</td>
+                <td style="text-align: center;">1.10</td>
+            </tr>
+            <tr>
+                <td rowspan="2">10.</td>
+                <td>Стрельба из пневматической винтовки из положения сидя или стоя с опорой локтей о стол или стойку, дистанция — 10 м (очки)&nbsp;<a title="Стрельба из пневматической винтовки" href="http://www.gto-normy.ru/strelba-iz-pnevmaticheskoy-vintovki/">···</a></td>
+                <td style="text-align: center;">15</td>
+                <td style="text-align: center;">20</td>
+                <td style="text-align: center;">25</td>
+                <td style="text-align: center;">15</td>
+                <td style="text-align: center;">20</td>
+                <td style="text-align: center;">25</td>
+            </tr>
+            <tr>
+                <td>или из электронного оружия из положения сидя или стоя с опорой локтей о стол или стойку, дистанция — 10 м (очки)</td>
+                <td style="text-align: center;">18</td>
+                <td style="text-align: center;">25</td>
+                <td style="text-align: center;">30</td>
+                <td style="text-align: center;">18</td>
+                <td style="text-align: center;">25</td>
+                <td style="text-align: center;">30</td>
+            </tr>
+            <tr>
+                <td>11.</td>
+                <td>Туристический поход с проверкой туристических навыков</td>
+                <td style="text-align: center;" colspan="6">Туристический поход с проверкой туристических навыков на дистанцию 10 км</td>
+            </tr>
+            <tr>
+                <td colspan="2">Кол-во видов испытаний видов (тестов) в возрастной группе</td>
+                <td style="text-align: center;">11</td>
+                <td style="text-align: center;">11</td>
+                <td style="text-align: center;">11</td>
+                <td style="text-align: center;">11</td>
+                <td style="text-align: center;">11</td>
+                <td style="text-align: center;">11</td>
+            </tr>
+            <tr>
+                <td colspan="2">Кол-во испытаний (тестов), которые необходимо выполнить для получения знака отличия Комплекса**</td>
+                <td style="text-align: center;">6</td>
+                <td style="text-align: center;">7</td>
+                <td style="text-align: center;">8</td>
+                <td style="text-align: center;">6</td>
+                <td style="text-align: center;">7</td>
+                <td style="text-align: center;">8</td>
+            </tr>
+            <tr>
+                <td colspan="8">* Для бесснежных районов страны</td>
+            </tr>
+            <tr>
+                <td colspan="8">** При выполнении нормативов для получения знаков отличия Комплекса обязательны испытания (тесты) на силу, быстроту, гибкость и выносливость.</td>
+            </tr>
+           </tbody>
+        </table>
+        <!-- /5 -->
     </div>
     <!-- Конец изменяемого контента -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
