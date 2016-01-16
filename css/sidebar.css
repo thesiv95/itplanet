@@ -3,11 +3,14 @@
     float: right;
 }
 
+.sidebar__city {
+    background-color: rgba(255,255,255,.4);
+}
 
 .sidebar__city-choose {
     width: 100%;
     height: 100%;
-    background-color: transparent;
+    background-color: rgba(255,255,255,.0); /* иначе будет обычный белый цвет */
     border: none;
     /* убираем стандартную стрелочку */
     /*for WebKit*/
@@ -28,6 +31,19 @@
     display: none;
 }
 
+.sidebar__auth {
+    background-color: rgba(255,255,255,.4);
+}
+
+.sidebar__gismeteo {
+    background-color: rgba(255,255,255,.5) !important;
+    /* !important нужен, чтобы перебить стили задаваемые скриптами */
+}
+
+.sidebar__poll {
+    background-color: rgba(255,255,255,.4);
+}
+
 .sidebar__auth-title, .sidebar__poll-title {
     font-family: 'PT Serif', serif;
     text-align: center;
@@ -43,6 +59,9 @@
     width: 200px;
     margin-left: -2px;
     padding: 5px;
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 8px;
 }
 
 .sidebar__auth-para_login {
@@ -84,6 +103,10 @@
 
 .sidebar__auth-btn,.sidebar__poll-btn {
     margin-left: 25%;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 5px;
 }
 
 .gsInformer {

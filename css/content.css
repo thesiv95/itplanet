@@ -1,6 +1,11 @@
 .content {
     width: 760px;
     float: left;
+    background: rgba(255,255,255,.4);
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 0 25px;
+    box-sizing: border-box; /* тогда паддинг будет внутри всего блока с контентом, а не вытеснять его */
 }
 
 .content__item-title {
@@ -33,12 +38,8 @@
 }
 
 .content__item-doclink-place {
-    display: inline;
     margin: 0;
     padding: 0;
-    position: absolute;
-    left: 14%;
-    top: 504px;
 }
 
 .content__item-doclink a {
@@ -49,5 +50,12 @@
 
 .content__item-doclink a:hover {
     text-decoration: underline;
+}
+
+.content__item-doclink-desc {
+    position: absolute;
+    left: 218px;
+    top: 432px;
+    font-style: italic;
 }
 

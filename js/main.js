@@ -8,10 +8,8 @@ $(document).ready(function(){
         e.preventDefault();
         var $this = $(this),
             index = $this.data('index'), // номер ступени
-            forWho = $this.data('for'), // фрагмент текста "для кого"
-            replace = $this.data('replace'); // по этому атрибуту определяется пол
-                                                            // если речь идет о женском поле, то он принимает значение TRUE
-                                                            // и к имени файла добавляется префикс
+            forWho = $this.data('for'); // фрагмент текста "для кого"
+
 
         // Заносим в соответствующие ячейки
         $('#gtonum').text(index);
@@ -20,14 +18,7 @@ $(document).ready(function(){
         $this.addClass('active').siblings().removeClass('active');
         // Формируем ссылку на нужное имя файла, и вставляем ее в нужный див с id = link
 
-        var link;
-        if (replace) {
-            link = '<a href="docs/' + index +'-woman.docx" title="">Скачать документ</a>';
-        } else {
-            link = '<a href="docs/' + index +'.docx" title="">Скачать документ</a>';
-        }
-
-        $('#link').html(link);
+        $('#link').html('<a href="docs/' + index +'.docx">Скачать документ</a>');
 
     });
 
