@@ -36,7 +36,7 @@
 }
 
 .sidebar__gismeteo {
-    background-color: rgba(255,255,255,.5) !important;
+    background-color: rgba(0,0,255,.1) !important;
     /* !important нужен, чтобы перебить стили задаваемые скриптами */
 }
 
