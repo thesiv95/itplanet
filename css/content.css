@@ -18,6 +18,10 @@
     padding: 0 2px;
 }
 
+.content__item-highlight {
+    font-weight: bold;
+}
+
 .content__item-choose:hover {
     border: 1px solid #000;
     border-radius: 6px;
@@ -26,5 +30,24 @@
 .content__item-choose.active {
     border: 1px solid #000;
     border-radius: 6px;
+}
+
+.content__item-doclink-place {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 14%;
+    top: 504px;
+}
+
+.content__item-doclink a {
+    text-decoration: none;
+    color: #161037;
+    font-weight: 300;
+}
+
+.content__item-doclink a:hover {
+    text-decoration: underline;
 }
 
