@@ -1,0 +1,29 @@
+body {
+    background: #add8e6;
+}
+
+.header__title {
+    font-family: Tahoma, serif;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.content__ie-only {
+    display: block;
+}
+
+.sidebar__city-choose {
+    background-color: transparent;
+}
+
+.sidebar__auth-input-pass {
+    font-family: serif; /*сбил шрифт, иначе бы некорректно отображались "точечки" со стороннего шрифта */
+}
+
+.file-icon, .file-icon-sm {
+    display: none;
+}
+
+#disqus_thread {
+    display: none;
+}

@@ -6,6 +6,11 @@
     border-radius: 10px;
     padding: 0 25px;
     box-sizing: border-box; /* тогда паддинг будет внутри всего блока с контентом, а не вытеснять его */
+    behavior: url(PIE-1.0.0/PIE.htc);
+}
+
+.content__ie-only {
+    display: none;
 }
 
 .content__item-title {
@@ -30,11 +35,13 @@
 .content__item-choose:hover {
     border: 1px solid #000;
     border-radius: 6px;
+    behavior: url(PIE-1.0.0/PIE.htc);
 }
 
 .content__item-choose.active {
     border: 1px solid #000;
     border-radius: 6px;
+    behavior: url(PIE-1.0.0/PIE.htc);
 }
 
 .content__item-doclink-place {

@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 <head>
+    <title>Портал о здоровом образе жизни</title>
     <meta charset="UTF-8">
     <!-- отключить режим совместимости internet explorer -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- для адаптивности: ширина экрана берется за исходную ширину, от которой все высчитывается -->
+
+     <!-- для адаптивности: ширина экрана берется за исходную ширину, от которой все высчитывается -->
     <meta name="viewport" content="width=device-width">
     <!-- seo optimization: запретим индексацию сайта поисковыми роботами -->
     <meta name="robots" content="noindex, nofollow">
     <meta name="keywords" content="зож, здоровый, образ, жизни, тренировки, спорт, портал, культура, секции, площадки, новости, молодёжь, потенциал">
     <meta name="description" content="В данном интернет-портале будут отражены сведения о спортивных площадках, календаре мероприятий, официальных нормативах и многом другом. Каждый житель страны сможет получить полезные советы от профессионалов, узнать больше о подборе амуниции и правильном питании, записать ребёнка в секцию, а также открыть свой личный кабинет, где будет отображаться информация о его личных успехах.">
     <meta name="author" content="SIV">
-    <title>Портал о здоровом образе жизни</title>
+
     <link rel="stylesheet" type="text/css" href="https://bst1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css">
     <!-- Библиотека normalize.css "заставляет" старые и новые браузеры отображать все элементы одинаково -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -117,6 +119,18 @@
     </div>
     <!-- Изменяемый контент: в этот блок будет выводиться вся основная информация -->
     <div class="content">
+
+        <div class="content__ie-only">
+            <div class="content__item">
+                <h4 class="content__item-title">
+                    Система комментирования не смогла отобразиться.
+                </h4>
+                <div class="content__item-text">
+                    Попробуйте открыть эту страницу в более новом браузере.
+                </div>
+            </div>
+        </div>
+
         <!-- Система комментирования Disqus -->
         <div id="disqus_thread"></div>
         <script>

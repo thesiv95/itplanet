@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 <head>
+    <title>Портал о здоровом образе жизни</title>
     <meta charset="UTF-8">
     <!-- отключить режим совместимости internet explorer -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,7 @@
     <meta name="keywords" content="зож, здоровый, образ, жизни, тренировки, спорт, портал, культура, секции, площадки, новости, молодёжь, потенциал">
     <meta name="description" content="В данном интернет-портале будут отражены сведения о спортивных площадках, календаре мероприятий, официальных нормативах и многом другом. Каждый житель страны сможет получить полезные советы от профессионалов, узнать больше о подборе амуниции и правильном питании, записать ребёнка в секцию, а также открыть свой личный кабинет, где будет отображаться информация о его личных успехах.">
     <meta name="author" content="SIV">
-    <title>Портал о здоровом образе жизни</title>
+
     <link rel="stylesheet" type="text/css" href="https://bst1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css">
     <!-- Библиотека normalize.css "заставляет" старые и новые браузеры отображать все элементы одинаково -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -21,14 +22,18 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/sidebar.css">
+    <!-- Если браузер internet explorer 8 или ниже, будет подключена специальная таблица стилей -->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css">
+    <![endif]-->
 </head>
 <body>
 <div class="wrapper">
     <!-- Если браузер internet explorer 8 или ниже, сайт будет работать более-менее, но появится предупреждение -->
-    <!--[if gte IE 8]>
+    <!--[if lte IE 8]>
     <div class="ie-warning">
         <p class="ie-warning__para">Вы используете <strong>устаревший браузер</strong>.</p>
-        <p  class="ie-warning__para">Пожалуйста, скачайте более новый браузер по <a href="http://browsehappy.com/" target="_blank">этой ссылке</a>, в противном случае корректная работа сайта не гарантируется.</p>
+        <p  class="ie-warning__para">Пожалуйста, скачайте более новый браузер по <a href="http://browsehappy.com/" target="_blank" class="ie-warning__link">этой ссылке</a>, в противном случае корректная работа сайта не гарантируется.</p>
     </div>
     <![endif]-->
     <!-- Заголовок меню -->
@@ -71,7 +76,7 @@
                 <input type="text" id="login" class="sidebar__auth-input">
                 <span class="icon-key"></span>
                 <label for="password" class="sidebar__auth-para_pass">Пароль</label>
-                <input type="password" id="password" class="sidebar__auth-input">
+                <input type="password" id="password" class="sidebar__auth-input sidebar__auth-input-pass">
                 <button class="sidebar__auth-btn" type="submit">Вход в систему</button>
             </form>
         </div>

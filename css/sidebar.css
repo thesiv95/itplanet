@@ -62,6 +62,7 @@
     background: transparent;
     border: 1px solid #000;
     border-radius: 8px;
+    behavior: url(PIE-1.0.0/PIE.htc);
 }
 
 .sidebar__auth-para_login {
@@ -82,6 +83,7 @@
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 15px;
+    behavior: url(PIE-1.0.0/PIE.htc);
 }
 
 .sidebar__auth-form {
@@ -107,6 +109,7 @@
     border: 2px solid #000;
     border-radius: 8px;
     padding: 5px;
+    behavior: url(PIE-1.0.0/PIE.htc);
 }
 
 .gsInformer {
