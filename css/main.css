@@ -46,7 +46,12 @@ body {
 
 /*****  Responsive ******/
 
-@media (max-width: 1022px) {
+@media (max-width: 1040px) {
+
+    .header__menu {
+        padding: 0 90px;
+    }
+
    .content {
        margin-left: 10px;
    }
