@@ -43,3 +43,229 @@ body {
 .header__link:hover, .current {
     text-decoration: underline;
 }
+
+/*****  Responsive ******/
+
+@media (max-width: 1022px) {
+   .content {
+       margin-left: 10px;
+   }
+
+   .sidebar {
+       margin-right: 10px;
+   }
+
+   .sidebar__city, .sidebar__auth, .sidebar__gismeteo, .sidebar__poll {
+       width: 83%;
+   }
+
+    .sidebar__auth-input {
+       width: 190px !important;
+   }
+
+
+}
+
+@media (max-width: 994px) {
+    .content {
+        margin-left: 12px;
+    }
+
+    .sidebar__city, .sidebar__auth, .sidebar__gismeteo, .sidebar__poll {
+        width: 78%;
+    }
+
+    .sidebar__auth-input {
+        width: 178px !important;
+    }
+
+
+}
+
+@media (max-width: 985px) {
+    .content {
+        margin-left: 13px;
+    }
+
+    .sidebar__city, .sidebar__auth, .sidebar__gismeteo, .sidebar__poll {
+        width: 73%;
+    }
+
+    .sidebar__auth-input {
+        width: 165px !important;
+    }
+
+}
+
+@media (max-width: 972px) {
+
+    .header__menu {
+        padding: 0 60px;
+    }
+
+    .content {
+        margin-left: 23px;
+        width: 928px !important;
+    }
+
+    .sidebar {
+        width: 999px !important;
+        float: right;
+        margin: 0;
+    }
+
+    .sidebar__city, .sidebar__auth, .sidebar__gismeteo, .sidebar__poll {
+        width: 90% !important;
+    }
+
+    .sidebar__auth-para_login {
+        margin-top: 5px;
+        margin-right: 3px !important;
+    }
+
+    .sidebar__auth-btn, .sidebar__poll-btn {
+        margin-left: 0 !important;
+    }
+
+    .sidebar__auth-input {
+        margin-right: 2px !important;
+    }
+
+    .sidebar__auth-title, .sidebar__poll-title {
+        text-align: left !important;
+        margin-left: 5px !important;
+    }
+
+
+}
+
+@media (max-width: 950px) {
+    .sidebar {
+        margin-right: 10px;
+    }
+    .content {
+        width: 925px !important;
+        margin-left: 15px;
+    }
+
+
+}
+
+@media (max-width: 938px) {
+    .sidebar {
+        margin-right: 18px;
+    }
+    .content {
+        width: 928px !important;
+        margin-left: 5px;
+    }
+
+}
+
+@media (max-width: 928px) {
+    .header__title {
+        margin-right: 50px;
+    }
+    .header__menu {
+        padding: 0 50px;
+    }
+    .sidebar {
+        margin-right: 80px;
+        width: 900px !important;
+    }
+    .content {
+        margin-left: 43px;
+        width: 837px !important;
+    }
+
+}
+
+@media (max-width: 878px) {
+    .header__menu {
+        padding: 0 30px;
+    }
+    .sidebar {
+        margin-right: 125px;
+        width: 860px !important;
+    }
+    .content {
+        margin-left: 36px;
+        width: 803px !important;
+    }
+
+}
+
+@media (max-width: 847px) {
+    .header__title {
+        margin-right: 130px;
+        font-size: 34px;
+    }
+    .header__menu {
+        padding: 0 14px;
+    }
+    .sidebar {
+        margin-right: 140px;
+    }
+    .content {
+        margin-left: 24px;
+        width: 800px !important;
+    }
+    .header__menu {
+        padding: 0 38px;
+    }
+    .header__link {
+        padding: 2px;
+    }
+
+}
+@media (max-width: 823px)  {
+    .header__title {
+        margin-right: 165px;
+        font-size: 32px;
+    }
+    .header__menu {
+        padding: 0 25px;
+    }
+    .sidebar {
+        margin-right: 150px;
+    }
+    .content {
+        margin-left: 14px;
+    }
+
+}
+
+@media (max-width: 814px) {
+    .header__title {
+        font-size: 30px;
+    }
+    .header__menu {
+        padding: 0 20px;
+    }
+    .sidebar__city, .sidebar__auth, .sidebar__gismeteo, .sidebar__poll {
+        width: 88% !important;
+    }
+    .content {
+        width: 784px !important;
+    }
+
+
+}
+
+@media (max-width: 796px) {
+    .header__title {
+        font-size: 28px;
+        margin-right: 210px;
+    }
+    .header__menu {
+        padding: 0 15px;
+    }
+    .sidebar__city, .sidebar__auth, .sidebar__gismeteo, .sidebar__poll {
+        width: 87% !important;
+    }
+    .content {
+        width: 775px !important;
+    }
+
+}
+
