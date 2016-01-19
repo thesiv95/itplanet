@@ -22,4 +22,30 @@ $(document).ready(function(){
 
     });
 
+    // Показ и скрытие элементов меню на маленьких экранах
+
+    $('.header__togglemenu').click(function(){
+
+        var menu = $('.header__menu'),
+                sidebar = $('.sidebar');
+
+
+        // Если нету класса hidden, т.е. если меню не скрыто:
+
+        if (!(menu.hasClass('hidden'))) {
+            menu.hide();
+            sidebar.css('margin-top', 0 + 'px');
+            menu.addClass('hidden'); // добавляем класс, который и будет обозначать, что меню скрыто
+        } else {
+            menu.show();
+            sidebar.css('margin-top', 230 + 'px');
+            menu.removeClass('hidden');
+        }
+
+
+
+
+
+    });
+
 });

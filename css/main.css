@@ -14,6 +14,10 @@ body {
     height: 125px;
 }
 
+.header__togglemenu {
+    display: none; /* По умолчанию, кнопка скрыта на экранах более 768 пикселей */
+}
+
 .header__menu {
     list-style: none;
     margin-left: 0;
@@ -49,9 +53,11 @@ body {
 .ie-warning {
     border: 3px solid #000000;
     border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
     padding: 0 10px;
     margin-top: 10px;
-    behavior: url(PIE-1.0.0/PIE.htc); /* библиотека CSS3PIE делает скругленными уголки в ie8  */
+   behavior: url(PIE-1.0.0/PIE.htc); /* библиотека CSS3PIE делает скругленными уголки в ie8  */
 }
 .ie-warning__para {
     line-height: 10px;
@@ -290,3 +296,69 @@ body {
 
 }
 
+@media (max-width: 768px) {
+
+    .header__menu {
+        padding: 0 28px;
+    }
+
+    .header__togglemenu {
+        display: block; /* Показываем кнопку, отображающую или скрывающую меню */
+        margin-left: 25px;
+        margin-bottom: 15px;
+        background: transparent;
+        border: 1px solid #000;
+        font-size: 22px;
+        width: 72%;
+        text-align: left;
+    }
+
+    .header__list {
+        display: block; /* Показываем меню списком, отключаем горизонтальное отображение */
+    }
+
+    .sidebar {
+        margin-right: 138px;
+        margin-top: 230px; /* Сдвигаем меню */
+    }
+
+    .sidebar__city, .sidebar__auth, .sidebar__gismeteo, .sidebar__poll {
+        padding-left: 1px;
+        width: 80% !important;
+    }
+
+    .content {
+        width: 715px !important;
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .header__title {
+        margin-right: 653px;
+    }
+
+    .header__togglemenu {
+        width: 31%;
+    }
+    .sidebar__auth-input {
+        margin-right: 15px !important;
+        margin-top: 5px;
+    }
+    .sidebar__auth-para_login {
+        margin-right: 10px !important;
+    }
+    .sidebar__city, .sidebar__auth, .sidebar__gismeteo, .sidebar__poll {
+        width: 33% !important;
+    }
+
+    .sidebar__auth-btn, .sidebar__poll-btn {
+        margin-left: 30% !important;
+    }
+
+    .content {
+        width: 310px !important;
+        margin-left: 25px;
+    }
+}
