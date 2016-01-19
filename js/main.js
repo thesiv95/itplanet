@@ -42,9 +42,11 @@ $(document).ready(function(){
             menu.removeClass('hidden');
         }
 
+
     });
 
     // Отправка результатов опроса
+
 
     $('#poll-form').submit(function(e){
         e.preventDefault();
