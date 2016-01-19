@@ -42,10 +42,28 @@ $(document).ready(function(){
             menu.removeClass('hidden');
         }
 
+    });
 
+    // Отправка результатов опроса
 
+    $('#poll-form').submit(function(e){
+        e.preventDefault();
+        var $this = $(this),
+              data = $this.serialize(), // выбранное значение
+              url = '../php/poll.php'; // файл - php-обработчик
 
+        $.ajax({
+            type: 'POST',
+            url: url,
+            dataType : 'JSON',
+            data: data
+        }).success(function(){
+            console.log('Success');
+        }).fail(function(){
+            console.log('Fail');
+        });
 
+        console.log(data);
     });
 
 });

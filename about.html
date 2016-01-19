@@ -15,7 +15,6 @@
     <link rel="stylesheet" type="text/css" href="https://bst1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css">
     <!-- Библиотека normalize.css "заставляет" старые и новые браузеры отображать все элементы одинаково -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/select2.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/content.css">
@@ -109,9 +108,9 @@
             <h4 class="sidebar__poll-title">Как часто вы делаете зарядку?</h4>
             <div class="sidebar__poll-answers">
                 <form id="poll-form">
-                    <p class="sidebar__poll-answer"><input type="radio" class="sidebar__poll-input">каждый день</p>
-                    <p class="sidebar__poll-answer"><input type="radio" class="sidebar__poll-input">временами</p>
-                    <p class="sidebar__poll-answer"><input type="radio" class="sidebar__poll-input">не делаю</p>
+                    <p class="sidebar__poll-answer"><input type="radio" name="var1" class="sidebar__poll-input">каждый день</p>
+                    <p class="sidebar__poll-answer"><input type="radio" name="var2" class="sidebar__poll-input">временами</p>
+                    <p class="sidebar__poll-answer"><input type="radio" name="var3" class="sidebar__poll-input">не делаю</p>
                     <button class="sidebar__poll-btn" type="submit">Проголосовать</button>
                 </form>
             </div>
@@ -168,7 +167,6 @@
     </script>
     <script src="js/html5shiv.min.js"></script>
     <script src="js/html5shiv-printshiv.min.js"></script>
-    <script src="js/select2.full.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
