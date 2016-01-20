@@ -18,6 +18,18 @@
         $data['pagename'] = 'Главная страница';
         $data['title'] = $data['pagename'] . ' | ' . $data['sitename'];
         $data['current'] = 'index'; // название текущей страницы, чтобы переключать классы в пунктах меню
+
+        // Получение данных из БД с помощью библиотеки Idiorm
+        // Подключение к БД
+        ORM::configure(array(
+            'connection_string' => 'mysql:host='. $config['database']['host'] .';dbname='. $config['database']['dbname'],
+            'username' => $config['database']['user'],
+            'password' => $config['database']['password']
+        )
+        );
+        // Сбор значений таблицы
+        $newsItems = ORM::for_table('news')->find_many();
+        $data['newsitems'] = $newsItems;
         return $templater->display('_pages/index', $data);
     });
     $router->respond('GET', '/areas/?', function () use ($templater, $config) {

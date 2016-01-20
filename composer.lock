@@ -4,9 +4,67 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8eef255cb94cb4aafe275a34d1402419",
-    "content-hash": "9209735ecb8d5d4213f1aaa61ef97a3c",
+    "hash": "c64ea13d074a56322f53ded540e78d5f",
+    "content-hash": "1155c1e1efd71100df944975dd1c9bfa",
     "packages": [
+        {
+            "name": "j4mie/idiorm",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/j4mie/idiorm.git",
+                "reference": "1db83c9fee8a6418d92fd6fa87447d31faf88842"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/j4mie/idiorm/zipball/1db83c9fee8a6418d92fd6fa87447d31faf88842",
+                "reference": "1db83c9fee8a6418d92fd6fa87447d31faf88842",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "idiorm.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause",
+                "BSD-3-Clause",
+                "BSD-4-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Holywell",
+                    "email": "treffynnon@php.net",
+                    "homepage": "http://simonholywell.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jamie Matthews",
+                    "email": "jamie.matthews@gmail.com",
+                    "homepage": "http://j4mie.org",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Durham Hale",
+                    "email": "me@durhamhale.com",
+                    "homepage": "http://durhamhale.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "A lightweight nearly-zero-configuration object-relational mapper and fluent query builder for PHP5",
+            "homepage": "http://j4mie.github.com/idiormandparis",
+            "keywords": [
+                "idiorm",
+                "orm",
+                "query builder"
+            ],
+            "time": "2015-01-19 12:53:20"
+        },
         {
             "name": "klein/klein",
             "version": "dev-master",
@@ -190,7 +248,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "klein/klein": 20,
-        "twig/twig": 20
+        "twig/twig": 20,
+        "j4mie/idiorm": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -17,6 +17,7 @@
     },
     "require": {
         "klein/klein": "dev-master",
-        "twig/twig": "dev-master"
+        "twig/twig": "dev-master",
+        "j4mie/idiorm": "dev-master"
     }
 }
