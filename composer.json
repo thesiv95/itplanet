@@ -1,0 +1,16 @@
+{
+    "name": "siv/itportal",
+
+    "authors": [
+        {
+            "name": "Ilia Soloveychik",
+            "email": "091995_mail@mail.ru"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor-php"
+    },
+    "require": {
+        "klein/klein": "dev-master"
+    }
+}
