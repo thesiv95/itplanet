@@ -18,7 +18,7 @@ $(document).ready(function(){
         $this.addClass('active').siblings().removeClass('active');
         // Формируем ссылку на нужное имя файла, и вставляем ее в нужный див с id = link
 
-        $('#link').html('<a href="docs/' + index +'.docx">Скачать документ</a>');
+        $('#link').html('<a href="/docs/' + index +'.docx">Скачать документ</a>');
 
     });
 

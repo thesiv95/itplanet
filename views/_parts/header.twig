@@ -9,14 +9,32 @@
 <header class="header">
     <h4 class="header__title">Здоровый образ жизни</h4>
     <ul class="header__menu">
-        <li class="header__list"><a href="/" class="header__link">Новости</a></li>
-        <li class="header__list"><a href="/areas" class="header__link">Площадки</a></li>
-        <li class="header__list"><a href="/secs" class="header__link">Секции</a></li>
-        <li class="header__list"><a href="/gto" class="header__link">ГТО</a></li>
-        <li class="header__list"><a href="/iwannatrain" class="header__link">Хочу!</a></li>
-        <li class="header__list"><a href="/calendar" class="header__link">Календарь</a></li>
-        <li class="header__list"><a href="/info" class="header__link">Материалы</a></li>
-        <li class="header__list"><a href="/equipment" class="header__link">Экипировка</a></li>
-        <li class="header__list"><a href="/about" class="header__link">О проекте</a></li>
+        <li class="header__list"><a href="/" class="header__link
+            {% if current == 'index' %} current {% endif %}
+        ">Новости</a></li>
+        <li class="header__list"><a href="/areas" class="header__link
+            {% if current == 'areas' %} current {% endif %}
+        ">Площадки</a></li>
+        <li class="header__list"><a href="/secs" class="header__link
+            {% if current == 'secs' %} current {% endif %}
+        ">Секции</a></li>
+        <li class="header__list"><a href="/gto" class="header__link
+           {% if current == 'gto' %} current {% endif %}
+        ">ГТО</a></li>
+        <li class="header__list"><a href="/iwannatrain" class="header__link
+            {% if current == 'iwannatrain' %} current {% endif %}
+        ">Хочу!</a></li>
+        <li class="header__list"><a href="/calendar" class="header__link
+           {% if current == 'calendar' %} current {% endif %}
+        ">Календарь</a></li>
+        <li class="header__list"><a href="/info" class="header__link
+          {% if current == 'info' %} current {% endif %}
+        ">Материалы</a></li>
+        <li class="header__list"><a href="/equipment" class="header__link
+          {% if current == 'equipment' %} current {% endif %}
+        ">Экипировка</a></li>
+        <li class="header__list"><a href="/about" class="header__link
+          {% if current == 'about' %} current {% endif %}
+        ">О проекте</a></li>
     </ul>
 </header>
