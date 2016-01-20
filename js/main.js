@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     // Формируем ссылку на 1й файл при загрузке страницы
-    $('#link').html('<a href="docs/1.docx">Скачать документ</a>');
+    $('#link').html('<a href="/docs/1.docx">Скачать документ</a>');
 
 // Раздел ГТО - переключение таблиц и изменение заголовка
     $('.content__item-chooseblock').children('.content__item-choose').click(function(e){
@@ -45,27 +45,6 @@ $(document).ready(function(){
 
     });
 
-    // Отправка результатов опроса
 
-
-    $('#poll-form').submit(function(e){
-        e.preventDefault();
-        var $this = $(this),
-              data = $this.serialize(), // выбранное значение
-              url = '../php/poll.php'; // файл - php-обработчик
-
-        $.ajax({
-            type: 'POST',
-            url: url,
-            dataType : 'JSON',
-            data: data
-        }).success(function(){
-            console.log('Success');
-        }).fail(function(){
-            console.log('Fail');
-        });
-
-        console.log(data);
-    });
 
 });

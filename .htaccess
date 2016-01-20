@@ -1,7 +1,6 @@
 # Конфигурация сервера
 
 AddDefaultCharset UTF-8
-
 Options -Indexes
 Options +FollowSymLinks
 

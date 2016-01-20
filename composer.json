@@ -10,7 +10,13 @@
     "config": {
         "vendor-dir": "vendor-php"
     },
+    "autoload": {
+        "classmap": [
+            "classes"
+        ]
+    },
     "require": {
-        "klein/klein": "dev-master"
+        "klein/klein": "dev-master",
+        "twig/twig": "dev-master"
     }
 }

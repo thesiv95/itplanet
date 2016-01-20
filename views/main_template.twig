@@ -1,0 +1,13 @@
+{% include '_parts/head.twig' %}
+<body>
+<div class="wrapper">
+
+{% include '_parts/header.twig' %}
+
+    {% include '_parts/sidebar.twig' %}
+    <!-- Изменяемый контент: в этот блок будет выводиться вся основная информация -->
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+    <!-- Конец изменяемого контента -->
+{% include '_parts/footer.twig' %}

@@ -1,0 +1,39 @@
+{% extends 'main_template.twig' %}
+
+{% block content %}
+<div class="content__item">
+    <h4 class="content__item-title">Нормативы ГТО - <span id="gtonum">1</span> ступень - возрастная группа
+        <span id="gtofor">6-8 лет</span></h4>
+    <div class="content__item-text">
+        <div class="content__item-controls">
+            <div class="content__item-chooseblock">
+                <!-- children -->
+                <p class="content__item-highlight">Школьники</p>
+                <a href="#1" data-index="1" data-for="6-8 лет" class="content__item-choose active">1 ступень</a>
+                <a href="#2" data-index="2" data-for="9-10 лет" class="content__item-choose">2 ступень</a>
+                <a href="#3" data-index="3" data-for="11-12 лет" class="content__item-choose">3 ступень</a>
+                <a href="#4" data-index="4" data-for="13-15 лет" class="content__item-choose">4 ступень</a>
+                <a href="#5" data-index="5" data-for="16-17 лет" class="content__item-choose">5 ступень</a>
+                <!-- men -->
+                <p class="content__item-highlight">Взрослые</p>
+                <a href="#6" data-index="6" data-for="18-29 лет" class="content__item-choose">6 ступень</a>
+                <a href="#7" data-index="7" data-for="30-39 лет" class="content__item-choose">7 ступень</a>
+                <a href="#8" data-index="8" data-for="40-49 лет" class="content__item-choose">8 ступень</a>
+                <a href="#9" data-index="9" data-for="50-59 лет" class="content__item-choose">9 ступень</a>
+                <a href="#10" data-index="10" data-for="60-69 лет" class="content__item-choose">10 ступень</a>
+                <a href="#11" data-index="11" data-for="70 лет и старше" class="content__item-choose">11 ступень</a>
+                <p>&nbsp;</p>
+                <div class="content__item-doclink">
+                    <div class="file-icon file-icon-sm" data-type="docx"></div>
+                    <div id="link" class="content__item-doclink-place"></div>
+                    <div class="content__item-doclink-place">
+                        <a href="{{ config.base_url }}docs/pril.docx">
+                            Приложение: виды обязательных испытаний (тестов) и испытаний (тестов) по выбору
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+</div>
+{% endblock %}

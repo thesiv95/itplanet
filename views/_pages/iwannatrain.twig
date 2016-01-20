@@ -1,0 +1,38 @@
+{% extends 'main_template.twig' %}
+
+{% block content %}
+    <div class="content__ie-only">
+        <div class="content__item">
+            <h4 class="content__item-title">
+                Система комментирования не смогла отобразиться или отображается с ошибками.
+            </h4>
+            <div class="content__item-text">
+                Попробуйте открыть эту страницу в более новом браузере.
+            </div>
+        </div>
+    </div>
+
+    <!-- Система комментирования Disqus -->
+    <div id="disqus_thread"></div>
+    <script>
+        /**
+         * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+         */
+
+        var disqus_config = function () {
+            this.page.url = 'http://sivsite.ru'; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = 123456; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//siv-lifestyle.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Пожалуйста, включите JavaScript, чтобы просмотреть <a href="https://disqus.com/?ref_noscript" rel="nofollow">комментарии Disqus.</a></noscript>
+{% endblock %}
