@@ -41,4 +41,4 @@ class Templater
         return $this->twig->render($template . '.twig', $data);
     }
 
-}
+}a
