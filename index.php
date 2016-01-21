@@ -39,6 +39,16 @@
         $data['pagename'] = 'Площадки';
         $data['title'] = $data['pagename'] . ' | ' . $data['sitename'];
         $data['current'] = 'areas';
+
+        ORM::configure(array(
+                'connection_string' => 'mysql:host='. $config['database']['host'] .';dbname='. $config['database']['dbname'],
+                'username' => $config['database']['user'],
+                'password' => $config['database']['password']
+            )
+        );
+        $areasItems = ORM::for_table('areas')->find_many();
+        $data['areasitems'] = $areasItems;
+
         return $templater->display('_pages/areas', $data);
     });
     $router->respond('GET', '/secs/?', function () use ($templater, $config) {
@@ -48,6 +58,16 @@
         $data['pagename'] = 'Секции';
         $data['title'] = $data['pagename'] . ' | ' . $data['sitename'];
         $data['current'] = 'secs';
+
+        ORM::configure(array(
+                'connection_string' => 'mysql:host='. $config['database']['host'] .';dbname='. $config['database']['dbname'],
+                'username' => $config['database']['user'],
+                'password' => $config['database']['password']
+            )
+        );
+        $secsItems = ORM::for_table('secs')->find_many();
+        $data['secsitems'] = $secsItems;
+
         return $templater->display('_pages/secs', $data);
     });
     $router->respond('GET', '/gto/?', function () use ($templater, $config) {
@@ -75,6 +95,16 @@
         $data['pagename'] = 'Календарь';
         $data['title'] = $data['pagename'] . ' | ' . $data['sitename'];
         $data['current'] = 'calendar';
+
+        ORM::configure(array(
+                'connection_string' => 'mysql:host='. $config['database']['host'] .';dbname='. $config['database']['dbname'],
+                'username' => $config['database']['user'],
+                'password' => $config['database']['password']
+            )
+        );
+        $calendarItems = ORM::for_table('calendar')->find_many();
+        $data['calendaritems'] = $calendarItems;
+
         return $templater->display('_pages/calendar', $data);
     });
     $router->respond('GET', '/info/?', function () use ($templater, $config) {
@@ -84,6 +114,16 @@
         $data['pagename'] = 'Материалы';
         $data['title'] = $data['pagename'] . ' | ' . $data['sitename'];
         $data['current'] = 'info';
+
+        ORM::configure(array(
+                'connection_string' => 'mysql:host='. $config['database']['host'] .';dbname='. $config['database']['dbname'],
+                'username' => $config['database']['user'],
+                'password' => $config['database']['password']
+            )
+        );
+        $infoItems = ORM::for_table('info')->find_many();
+        $data['infoitems'] = $infoItems;
+
         return $templater->display('_pages/info', $data);
     });
     $router->respond('GET', '/equipment/?', function () use ($templater, $config) {
@@ -93,6 +133,17 @@
         $data['pagename'] = 'Экипировка';
         $data['title'] = $data['pagename'] . ' | ' . $data['sitename'];
         $data['current'] = 'equipment';
+
+        ORM::configure(array(
+                'connection_string' => 'mysql:host='. $config['database']['host'] .';dbname='. $config['database']['dbname'],
+                'username' => $config['database']['user'],
+                'password' => $config['database']['password']
+            )
+        );
+        $equipmentItems = ORM::for_table('equipment')->find_many();
+        $data['equipmentitems'] = $equipmentItems;
+        $data['equipmentitems'];
+
         return $templater->display('_pages/equipment', $data);
     });
     $router->respond('GET', '/about/?', function () use ($templater, $config) {

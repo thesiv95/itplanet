@@ -1,41 +1,24 @@
 {% extends 'main_template.twig' %}
 
 {% block content %}
+    {% for secsitem in secsitems %}
     <div class="content__item">
-        <h4 class="content__item-title">Спортивный клуб "ОБСКОЙ"</h4>
+        <h4 class="content__item-title">{{ secsitem.title }}</h4>
         <p class="content__item-date">
             <span class="icon-clock"></span>
-            05/01/2016, 08:56
+            {{ secsitem.date }}
         </p>
         <div class="content__item-text">
-            <ul>
-                <li>Силовая степ-аэробика</li>
-                <li>Смешанные единоборства</li>
-            </ul>
+           {{ secsitem.text }}
         </div>
         <p class="content__item-activity">
             <span class="icon-eye"></span>
-            Просмотров: 155
+            Просмотров: {{ secsitem.views }}
             |
             <span class="icon-bubble2"></span>
-            Комментариев: 20
+            Комментариев: {{ secsitem.comments }}
         </p>
     </div>
-    <div class="content__item">
-        <h4 class="content__item-title">Футбольная школа "ЮРН"</h4>
-        <p class="content__item-date">
-            <span class="icon-clock"></span>
-            05/01/2016, 08:56
-        </p>
-        <div class="content__item-text">
-            Футбольная секция для детей 3-16 лет. Единственная в Новосибирске секция с возрастным ограничением по группам.
-        </div>
-        <p class="content__item-activity">
-            <span class="icon-eye"></span>
-            Просмотров: 155
-            |
-            <span class="icon-bubble2"></span>
-            Комментариев: 20
-        </p>
-    </div>
+    {% endfor %}
+
 {% endblock %}
